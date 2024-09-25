@@ -1,5 +1,7 @@
 # SP-1: Building a Movie Repository
 
+About this project: [The Movie DB Repo](https://dat3cph.github.io/material/projects/sp-1-movie-repo/)
+
 Includes:
 
 - IntelliJ setup
