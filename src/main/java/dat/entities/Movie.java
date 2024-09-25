@@ -45,6 +45,7 @@ public class Movie {
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "movie_id")
+    @Transient
     private List<SpokenLanguage> spokenLanguages;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
@@ -61,6 +62,7 @@ public class Movie {
 
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "credits_id")
+
     private Credits credits;
 
     private void addGenre(Genre genre) {
