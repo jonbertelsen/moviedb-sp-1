@@ -9,8 +9,6 @@ import dat.services.MovieSyncServices;
 import jakarta.persistence.EntityManagerFactory;
 import org.slf4j.LoggerFactory;
 
-import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
