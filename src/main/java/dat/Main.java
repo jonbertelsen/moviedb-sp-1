@@ -23,14 +23,14 @@ public class Main {
         // 1. Get all movie ids released after a certain date
    //     int[] movieIds = MovieSyncServices.getDanishMovieIdsReleasedAfter(LocalDate.of(2019, 9, 18), 1);
      //   System.out.println(Arrays.toString(movieIds));
-        //int[] movieIds = MovieSyncServices.movieIds;
-        int[] movieIds = MovieSyncServices.testMovieIds;
+        int[] movieIds = MovieSyncServices.movieIds;
+        //int[] movieIds = MovieSyncServices.testMovieIds;
 
         // 2. Get the details for each movie
         long startTime = System.currentTimeMillis();
 
-        List<MovieDTO> movieDTOs = MovieSyncServices.getMovieDetails(movieIds);
-        //List<MovieDTO> movieDTOs = MovieAsyncServices.getMovieDetailsAsync(movieIds);
+        //List<MovieDTO> movieDTOs = MovieSyncServices.getMovieDetails(movieIds);
+        List<MovieDTO> movieDTOs = MovieAsyncServices.getMovieDetailsAsync(movieIds);
 
         long fetchTime = System.currentTimeMillis();
         long duration = fetchTime - startTime;
